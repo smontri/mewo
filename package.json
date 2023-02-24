@@ -5,7 +5,8 @@
   "main": "server.js",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node server.js"
   },
   "engines": {
     "node": ">=10.15.3"
