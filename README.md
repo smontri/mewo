@@ -32,3 +32,8 @@ Commandes à utiliser :
 Une fois le test ok, ne pas oublier de détruire l'infrastructure crée, pour éviter des coûts et ne pas laisser la VM accessible sur Internet.
 
 - terrform destroy => détruit l'infrastructure
+
+### Créer une clé SSH
+
+Utiliser OpenSSH pour créer la paire de clés SSH.
+Il est aussi possible de créer et utiliser une paire de clé avec Azure (ce point sera traité également).
