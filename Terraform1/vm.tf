@@ -43,9 +43,9 @@ resource "azurerm_virtual_machine" "mewo-vm" {
   }
 
   tags = {
-      environment = "demo"
-      owner       = ${var.prefix}
+      environment = "${var.environment}"
+      owner       = "${var.prefix}"
       label       = "Virtual Machine"
-      project     = "MEWO"
+      project     = "${var.project}"
   }
 }

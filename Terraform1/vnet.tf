@@ -6,9 +6,9 @@ resource "azurerm_virtual_network" "mewo-vnet" {
   resource_group_name = azurerm_resource_group.mewo-rg.name
 
   tags = {
-    environment = "demo"
-    owner       = "smontri"
-    label       = "Virtual Network"
-    project     = "MEWO"
+      environment = "${var.environment}"
+      owner       = "${var.prefix}"
+      label       = "Virtual Network"
+      project     = "${var.project}"
   }
 }

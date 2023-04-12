@@ -6,9 +6,9 @@ resource "azurerm_public_ip" "mewo-ip" {
     allocation_method            = "Dynamic"
 
     tags = {
-        environment = "demo"
-        owner       = "smontri"
-        label       = "Public IP"
-        project     = "MEWO"
+      environment = "${var.environment}"
+      owner       = "${var.prefix}"
+      label       = "Public IP"
+      project     = "${var.project}"
     }
 }
