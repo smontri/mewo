@@ -12,3 +12,7 @@ resource "azurerm_public_ip" "mewo-ip" {
       project     = "${var.project}"
     }
 }
+
+output "public_ip" {
+  value = azurerm_public_ip.mewo-ip.ip_address
+}
