@@ -10,3 +10,7 @@ variable "environment" {
 variable "project" {
   default = "MEWO"
 }
+
+variable "ssh_key" {
+  default = ""
+}
